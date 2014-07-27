@@ -1,0 +1,128 @@
+#left-page{
+	width: 400px;
+	height: 300px;
+	/*margin-left: 400px;*/
+	background: #efefef;
+	position: relative;
+	z-index: 1;
+}
+
+#right-page{
+	width: 400px;
+	height: 300px;
+	margin-left: 400px;
+	background: #efefef;
+	position: relative;
+	top: -300px;
+	z-index: 1;
+}
+
+#turning-page-right .front{
+	width: 50px;
+	height: 300px;
+	margin-left: 400px;
+	background: #efefef;	
+	z-index: 3;
+}
+
+#turning-page-right .back{
+	width: 50px;
+	height: 300px;
+	margin-left: 400px;
+	background: #efefef;	
+	z-index: 2;
+}
+
+.frontslice1, .frontslice2, .frontslice3, .frontslice4, .frontslice5, .frontslice6, .frontslice7{
+	width: 50px;
+	height: 300px;
+	margin-left: 50px;
+	margin-top: -19px;
+	background: #efefef;
+	z-index: 3;
+}
+
+.backslice1, .backslice2, .backslice3, .backslice4, .backslice5, .backslice6, .backslice7{
+	width: 50px;
+	height: 300px;
+	margin-left: -50px;
+	margin-top: -19px;
+	background: #efefef;
+	z-index: 3;
+}
+
+#turning-page-left .front{
+	width: 50px;
+	height: 300px;
+	margin-left: 50px;
+	background: #efefef;	
+	z-index: 3;
+}
+
+#turning-page-left .back{
+	width: 50px;
+	height: 300px;
+	/*margin-left: 400px;*/
+	background: #efefef;	
+	z-index: 2;
+}
+
+/* lave tlacitko -> flip*/
+/*#book .leftClick{
+	-webkit-transform: rotate3d(0,1,0, 179deg);
+	-moz-transform: rotate3d(0,1,0, 179deg);
+	-o-transform: rotate3d(0,1,0, 179deg);
+	-ms-transform: rotate3d(0,1,0, 179deg);
+	transform: rotate3d(0,1,0, 179deg);
+}*/
+
+/* flip speed goes here */
+#turning-page-right, #turning-page-left,
+#turning-page-right.rightClick, #turning-page-left.leftClick,
+#book .frontslice1,
+#book .frontslice2,
+#book .frontslice3,
+#book .frontslice4,
+#book .frontslice5,
+#book .frontslice6,
+#book .frontslice7,
+#book .frontslice1,
+#book .frontslice2,
+#book .frontslice3,
+#book .frontslice4,
+#book .frontslice5,
+#book .frontslice6,
+#book .frontslice7
+ {
+	-webkit-transition: -webkit-transform 230ms ease-in;
+	-moz-transition: -moz-transform 230ms ease-in;
+	-o-transition: -o-transform 230ms ease-in;
+	-ms-transition: -ms-transform 230ms ease-in;
+	transition: transform 230ms ease-in;
+
+	-webkit-transform: rotate3d(0,1,0,0deg);
+	-moz-transform: rotate3d(0,1,0,0deg);
+	-o-transform: rotate3d(0,1,0,0deg);
+	-ms-transform: rotate3d(0,1,0,0deg);
+	transform: rotate3d(0,1,0,0deg);
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	position: relative;
+
+	z-index: 5;
+}
+
+
+
+#turning-page-right.rightClick4{
+	z-index: 999;
+}
+
+#turning-page-left.leftClick4{
+	z-index: 999;
+}

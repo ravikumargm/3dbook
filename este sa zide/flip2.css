@@ -1,0 +1,64 @@
+.s2a2, .s3a2, .s4a2, .s5a2{
+	-webkit-transform: translate3d(80px,0,0);
+	-moz-transform: translate3d(80px,0,0);
+	-o-transform: translate3d(80px,0,0);
+	-ms-transform: translate3d(80px,0,0);
+	transform: translate3d(80px,0,0);
+}
+
+.slice1.s1a2{
+	margin-left: 400px;
+	background: url("palmy.jpg") 0 0;
+}
+
+.slice1.s2a2{
+	background: url("palmy.jpg") -80px 0;
+}
+
+.slice1.s3a2{
+	background: url("palmy.jpg") -160px 0;
+}
+
+.slice1.s4a2{
+	background: url("palmy.jpg") -240px 0;
+}
+
+.slice1.s5a2{
+	background: url("palmy.jpg") -320px 0;
+}
+
+#book .s1a2{	
+	-webkit-transform: rotate3d(0,1,0,-179deg);
+	-moz-transform: rotate3d(0,1,0,-179deg);
+	-o-transform: rotate3d(0,1,0,-179deg);
+	-ms-transform: rotate3d(0,1,0,-179deg);
+	transform: rotate3d(0,1,0,-179deg);
+}
+#book .s2a2{
+	-webkit-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-moz-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-o-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-ms-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+}
+#book .s3a2{
+	-webkit-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-moz-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-o-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-ms-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+}
+#book .s4a2{
+	-webkit-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-moz-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-o-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-ms-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+}
+#book .s5a2{
+	-webkit-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-moz-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-o-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	-ms-transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+	transform: translate3d(79px,0,0) rotate3d(0,1,0,0deg);
+}

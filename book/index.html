@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Moja 3d kniha</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <link rel="stylesheet" type="text/css" href="flip.css"></link>
+    <link rel="stylesheet" type="text/css" href="flip-right.css"></link>
+    <link rel="stylesheet" type="text/css" href="flip-left.css"></link>
+    <link rel="stylesheet" type="text/css" href="normalize.css"></link>
+
+    <script type="text/javascript" src="jquery-1.9.0.min.js"> </script>
+    <script type="text/javascript" src="js.js"></script>
+  </head>
+  
+  <body>
+
+    <div id="cupons">
+      <img src="images/noviny.jpg" class="1" width="0" style="visibility:hidden;"/>
+      <img src="images/noviny.jpg" class="2" width="0" style="visibility:hidden;"/>
+      <img src="images/noviny.jpg" class="3" width="0" style="visibility:hidden;"/>
+      <img src="images/noviny.jpg" class="4" width="0" style="visibility:hidden;"/>
+      <img src="images/desert.jpg" class="5" width="0" style="visibility:hidden;"/>
+      <img src="images/palmy.jpg" class="6" width="0" style="visibility:hidden;"/>
+      <img src="images/palmy.jpg" class="7" width="0" style="visibility:hidden;"/>
+      <img src="images/chili.jpg" class="8" width="0" style="visibility:hidden;"/>
+      <img src="images/krajina.jpg" class="9" width="0" style="visibility:hidden;"/>
+      <img src="images/meduza.jpg" class="10" width="0" style="visibility:hidden;"/>
+      <img src="images/koala.jpg" class="11" width="0" style="visibility:hidden;"/>
+      <img src="images/palmy.jpg" class="12" width="0" style="visibility:hidden;"/>
+      <img src="images/desert.jpg" class="13" width="0" style="visibility:hidden;"/>
+      <img src="images/chili.jpg" class="14" width="0" style="visibility:hidden;"/>
+      <img src="images/krajina.jpg" class="15" width="0" style="visibility:hidden;"/>
+      <img src="images/meduza.jpg" class="16" width="0" style="visibility:hidden;"/>
+      <img src="images/koala.jpg" class="17" width="0" style="visibility:hidden;"/>
+    </div>
+
+    <!-- knizka, slajdy su naukladane na sebe-->
+    <div id="book">
+
+      <!-- lava stranka knizky -->
+      <div id="left-page">
+        <span class="overlay-left4"></span>
+        <span class="page-num" style="visibility:hidden;">-1</span>
+      </div>
+
+      <!-- otacajuci sa list vlavo -->
+      <div id="turning-page-left">
+        <!-- predok -->
+        <div class="back"> 
+          <!-- <span class="overlay-right"></span> -->
+          <span class="page-num" style="visibility:hidden;">1</span> 
+          
+          <span class="overlay-left"></span>
+          <div class="backslice1"> 
+            <span class="overlay-left1"></span>
+            <div class="backslice2">
+              <span class="overlay-left2"></span>
+              <div class="backslice3">
+                <span class="overlay-left3"></span>
+                <div class="backslice4">
+                  <div class="backslice5">
+                    <div class="backslice6">
+                      <div class="backslice7">
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>      
+
+        </div>
+        <!-- zadok -->
+        <div class="front"> 
+          <span class="overlay-right"></span>
+          <span class="page-num" style="visibility:hidden;">0</span>
+
+          <div class="frontslice1"> 
+            <span class="overlay-right1"></span>
+            <div class="frontslice2"> 
+              <span class="overlay-right2"></span>
+              <div class="frontslice3">
+                <span class="overlay-right3"></span>
+                <div class="frontslice4">
+                  <!-- <span class="overlay-left3"></span> -->
+                  <div class="frontslice5">
+                    <!-- <span class="overlay-left2"></span> -->
+                    <div class="frontslice6">
+                      <!-- <span class="overlay-left1"></span> -->
+                      <div class="frontslice7">
+                        <!-- <span class="overlay-left"></span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- otacajuci sa list vpravo -->
+
+      <div id="turning-page-right">
+        <!-- predok -->
+        <div class="front"> 
+          <span class="overlay-right"></span>
+          <span class="page-num" style="visibility:hidden;">2</span>
+          
+          <div class="frontslice1"> 
+            <span class="overlay-right1"></span>
+            <div class="frontslice2"> 
+              <span class="overlay-right2"></span>
+              <div class="frontslice3">
+                <span class="overlay-right3"></span>
+                <div class="frontslice4">
+                  <div class="frontslice5">
+                    <div class="frontslice6">
+                      <div class="frontslice7">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- zadok -->
+        <div class="back"> 
+          <!-- <span class="overlay-right"></span> -->
+          <span class="page-num" style="visibility:hidden;">3</span>
+
+          <span class="overlay-left"></span>
+          <div class="backslice1">
+            <span class="overlay-left1"></span>
+            <div class="backslice2">
+              <span class="overlay-left2"></span>
+              <div class="backslice3">
+                <span class="overlay-left3"></span>
+                <div class="backslice4">
+                  <div class="backslice5">
+                    <div class="backslice6">
+                      <div class="backslice7">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- prava stranka knizky -->
+      <div id="right-page">
+        <span class="overlay-right4"></span>
+        <span class="page-num" style="visibility:hidden;">4</span>
+      </div>
+
+    </div>
+
+    <!-- cisla aktualnych stranok -->
+    <p class="num-left"> 1 </p>
+    <p class="num-right"> 2 </p>
+
+    <!-- tlacitka -->
+    <p class="right"> Click right! >></p>
+    <p class="left"> << Click left! </p>
+
+  </body>
+
+</html>

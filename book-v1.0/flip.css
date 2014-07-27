@@ -1,0 +1,95 @@
+#left-page{
+	width: 400px;
+	height: 300px;
+	/*margin-left: 400px;*/
+	background: #efefef;
+	position: relative;
+	z-index: 1;
+}
+
+#right-page{
+	width: 400px;
+	height: 300px;
+	margin-left: 400px;
+	background: #efefef;
+	position: relative;
+	top: -300px;
+	z-index: 1;
+}
+
+#turning-page-right .front{
+	width: 400px;
+	height: 300px;
+	margin-left: 400px;
+	background: #efefef;	
+	z-index: 3;
+}
+
+#turning-page-right .back{
+	width: 400px;
+	height: 300px;
+	margin-left: 400px;
+	background: #efefef;	
+	z-index: 2;
+}
+
+#turning-page-left .front{
+	width: 400px;
+	height: 300px;
+	margin-left: 400px;
+	background: #efefef;	
+	z-index: 3;
+}
+
+#turning-page-left .back{
+	width: 400px;
+	height: 300px;
+	margin-left: 400px;
+	background: #efefef;	
+	z-index: 2;
+}
+
+/* prave tlacitko -> flip*/
+#book .rightClick{
+	-webkit-transform: rotate3d(0,1,0,-179deg);
+	-moz-transform: rotate3d(0,1,0,-179deg);
+	-o-transform: rotate3d(0,1,0,-179deg);
+	-ms-transform: rotate3d(0,1,0,-179deg);
+	transform: rotate3d(0,1,0,-179deg);
+}
+
+/* lave tlacitko -> flip*/
+#book .leftClick{
+	-webkit-transform: rotate3d(0,1,0, 179deg);
+	-moz-transform: rotate3d(0,1,0, 179deg);
+	-o-transform: rotate3d(0,1,0, 179deg);
+	-ms-transform: rotate3d(0,1,0, 179deg);
+	transform: rotate3d(0,1,0, 179deg);
+}
+
+/* flip speed goes here */
+#turning-page-right, #turning-page-left {
+	-webkit-transition: -webkit-transform 800ms ease-in-out;
+	-moz-transition: -moz-transform 800ms ease-in-out;
+	-o-transition: -o-transform 800ms ease-in-out;
+	-ms-transition: -ms-transform 800ms ease-in-out;
+	transition: transform 800ms ease-in-out;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	position: relative;
+
+	z-index: 5;
+}
+
+#turning-page-right.rightClick{
+	z-index: 999;
+}
+
+#turning-page-left.leftClick{
+	z-index: 999;
+}
